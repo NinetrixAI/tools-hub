@@ -1,0 +1,21 @@
+name: agent-browser
+version: 1.0.0
+description: "Agent Browser — headless browser automation CLI for AI agents (by Vercel Labs)"
+author: ninetrix
+tags:
+- browser
+- automation
+- web
+- scraping
+verified: true
+
+source:
+  type: local
+  files:
+    - agent_browser_tools.py
+
+dependencies:
+  pip: []
+  apt: []
+  npm:
+    - agent-browser

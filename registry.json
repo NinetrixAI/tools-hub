@@ -1,7 +1,39 @@
 {
   "version": 2,
-  "generated_at": "2026-03-22T21:45:28Z",
+  "generated_at": "2026-03-22T22:07:41Z",
   "tools": {
+    "agent-browser": {
+      "latest": "1.0.0",
+      "description": "Agent Browser \u2014 headless browser automation CLI for AI agents (by Vercel Labs)",
+      "tags": [
+        "browser",
+        "automation",
+        "web",
+        "scraping"
+      ],
+      "verified": true,
+      "source": {
+        "type": "local",
+        "files": [
+          "agent_browser_tools.py"
+        ]
+      },
+      "versions": {
+        "1.0.0": {
+          "sha256": "ea816d5d27419c3dce15ab9f57ea0535f60ffae0830dd2c8a4824b4aff3ea40c",
+          "file_hashes": {
+            "agent_browser_tools.py": "91d8800fb6a9c987e4178bf244e0f2e10a3a0d46c5843eaf1e0788381612909c"
+          }
+        }
+      },
+      "dependencies": {
+        "pip": [],
+        "apt": [],
+        "npm": [
+          "agent-browser"
+        ]
+      }
+    },
     "brave-search": {
       "latest": "1.0.0",
       "description": "Brave Search \u2014 web search with privacy focus",
