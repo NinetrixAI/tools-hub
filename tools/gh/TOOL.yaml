@@ -14,7 +14,7 @@ skill_set:
 
 source:
   type: cli
-  install: "apt-get update && apt-get install -y wget && wget -qO /tmp/gh.deb https://github.com/cli/cli/releases/download/v2.67.0/gh_2.67.0_linux_amd64.deb && dpkg -i /tmp/gh.deb && rm /tmp/gh.deb"
+  install: "apt-get update && apt-get install -y curl && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg -o /usr/share/keyrings/gh.gpg && echo 'deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main' > /etc/apt/sources.list.d/gh.list && apt-get update && apt-get install -y gh"
 
 credentials:
   GITHUB_TOKEN:

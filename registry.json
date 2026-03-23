@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-23T04:25:36Z",
+  "generated_at": "2026-03-23T04:27:04Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -157,11 +157,11 @@
       "verified": true,
       "source": {
         "type": "cli",
-        "install": "apt-get update && apt-get install -y wget && wget -qO /tmp/gh.deb https://github.com/cli/cli/releases/download/v2.67.0/gh_2.67.0_linux_amd64.deb && dpkg -i /tmp/gh.deb && rm /tmp/gh.deb"
+        "install": "apt-get update && apt-get install -y curl && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg -o /usr/share/keyrings/gh.gpg && echo 'deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main' > /etc/apt/sources.list.d/gh.list && apt-get update && apt-get install -y gh"
       },
       "versions": {
         "1.0.0": {
-          "sha256": "72434ddf977d40d991645a2e5722898bcf78af4faff6223b170f3539ceaf3b36"
+          "sha256": "a2115fcc1f6201434adfd16e6f83105f9ae02647198f7d759d5e06370249c68c"
         }
       },
       "credentials": {
