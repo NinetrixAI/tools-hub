@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-23T04:37:53Z",
+  "generated_at": "2026-03-23T04:56:38Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -647,11 +647,11 @@
       "verified": true,
       "source": {
         "type": "cli",
-        "install": "npm install -g wrangler"
+        "install": "apt-get update && apt-get install -y curl && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y nodejs && npm install -g wrangler"
       },
       "versions": {
         "1.0.0": {
-          "sha256": "79501f7052bdb11c127531f120dda4b835b7077f958aed70243bd3c20bd952ae"
+          "sha256": "59a3b7295a194cb88460d4833a79b304c2c4c801f2443e7bc958241d8d50b6f2"
         }
       },
       "credentials": {
