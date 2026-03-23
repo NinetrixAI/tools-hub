@@ -14,7 +14,12 @@ skill_set:
 
 source:
   type: cli
-  install: "apt-get update && apt-get install -y curl && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg -o /usr/share/keyrings/gh.gpg && echo 'deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main' > /etc/apt/sources.list.d/gh.list && apt-get update && apt-get install -y gh"
+
+dependencies:
+  apt_repo:
+    keyring_url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
+    repo: "deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main"
+  apt: [gh]
 
 credentials:
   GH_TOKEN:

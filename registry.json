@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-23T04:56:50Z",
+  "generated_at": "2026-03-23T05:26:20Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -156,13 +156,21 @@
       ],
       "verified": true,
       "source": {
-        "type": "cli",
-        "install": "apt-get update && apt-get install -y curl && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg -o /usr/share/keyrings/gh.gpg && echo 'deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main' > /etc/apt/sources.list.d/gh.list && apt-get update && apt-get install -y gh"
+        "type": "cli"
       },
       "versions": {
         "1.0.0": {
-          "sha256": "ea1f7cf63fc61a37799d117aa02e7529e8d35d1d0ec89fcb083e399026bf1149"
+          "sha256": "53b3b8adfaae3c8e437fe6eed32e975ca86cfb46d1c2fe27bbaf1d35a2bfa6fe"
         }
+      },
+      "dependencies": {
+        "apt_repo": {
+          "keyring_url": "https://cli.github.com/packages/githubcli-archive-keyring.gpg",
+          "repo": "deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main"
+        },
+        "apt": [
+          "gh"
+        ]
       },
       "credentials": {
         "GH_TOKEN": {
@@ -646,13 +654,17 @@
       ],
       "verified": true,
       "source": {
-        "type": "cli",
-        "install": "apt-get update && apt-get install -y curl && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y nodejs && npm install -g wrangler"
+        "type": "cli"
       },
       "versions": {
         "1.0.0": {
-          "sha256": "59a3b7295a194cb88460d4833a79b304c2c4c801f2443e7bc958241d8d50b6f2"
+          "sha256": "62fc3a6f0cf2c09f16fcedfcb2803b6ecc000c28a5e22f34657e272f54a1ad37"
         }
+      },
+      "dependencies": {
+        "npm": [
+          "wrangler"
+        ]
       },
       "credentials": {
         "CLOUDFLARE_API_TOKEN": {
