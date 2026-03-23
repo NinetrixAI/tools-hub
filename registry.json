@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-23T03:56:35Z",
+  "generated_at": "2026-03-23T04:19:59Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -157,11 +157,11 @@
       "verified": true,
       "source": {
         "type": "cli",
-        "install": "mkdir -p -m 755 /etc/apt/keyrings\n&& wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null\n&& chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg\n&& echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main\" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null\n&& apt-get update\n&& apt-get install -y gh\n"
+        "install": "mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null && chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg && echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main\" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null && apt-get update && apt-get install -y gh"
       },
       "versions": {
         "1.0.0": {
-          "sha256": "9b60a64fe8361e73b3e291e8f3ad23b212e4ddb747db030be520d4fb8df20982"
+          "sha256": "cbac4857665fa7dc5334df72d6ef052c349008e86c96ed8b63c203bc7b93018b"
         }
       },
       "credentials": {
