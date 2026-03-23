@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-23T05:26:33Z",
+  "generated_at": "2026-03-23T07:01:53Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -160,13 +160,13 @@
       },
       "versions": {
         "1.0.0": {
-          "sha256": "53b3b8adfaae3c8e437fe6eed32e975ca86cfb46d1c2fe27bbaf1d35a2bfa6fe"
+          "sha256": "31ff1ac681e1c4ffde9b24f472542d2a1a87d4a725246fcec2db829d8d49c425"
         }
       },
       "dependencies": {
         "apt_repo": {
           "keyring_url": "https://cli.github.com/packages/githubcli-archive-keyring.gpg",
-          "repo": "deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main"
+          "repo": "deb [signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main"
         },
         "apt": [
           "gh"
