@@ -1,0 +1,33 @@
+name: gws
+version: 1.0.0
+description: "Google Workspace CLI — Gmail, Drive, Calendar, Sheets, Docs, Chat, Admin, and 100+ services"
+author: ninetrix
+tags:
+- google
+- workspace
+- email
+- productivity
+verified: true
+
+skill_set:
+  - hub://gws-master@1.0.0
+
+source:
+  type: cli
+
+dependencies:
+  npm: ["@googleworkspace/cli"]
+
+credentials:
+  GOOGLE_APPLICATION_CREDENTIALS:
+    label: Path to Google service account JSON key file (for service account auth)
+    required: false
+  GWS_OAUTH_CLIENT_ID:
+    label: Google OAuth2 client ID (for user-context auth)
+    required: false
+  GWS_OAUTH_CLIENT_SECRET:
+    label: Google OAuth2 client secret
+    required: false
+  GWS_REFRESH_TOKEN:
+    label: Google OAuth2 refresh token (for headless auth)
+    required: false

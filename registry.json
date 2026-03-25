@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-23T07:21:34Z",
+  "generated_at": "2026-03-25T23:12:00Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -333,6 +333,51 @@
           "required": true
         }
       }
+    },
+    "gws": {
+      "latest": "1.0.0",
+      "description": "Google Workspace CLI \u2014 Gmail, Drive, Calendar, Sheets, Docs, Chat, Admin, and 100+ services",
+      "tags": [
+        "google",
+        "workspace",
+        "email",
+        "productivity"
+      ],
+      "verified": true,
+      "source": {
+        "type": "cli"
+      },
+      "versions": {
+        "1.0.0": {
+          "sha256": "fb391dc407d4de4a527b6727fb83bf1e982cb460ad99c67143e1d335c7b03b92"
+        }
+      },
+      "dependencies": {
+        "npm": [
+          "@googleworkspace/cli"
+        ]
+      },
+      "credentials": {
+        "GOOGLE_APPLICATION_CREDENTIALS": {
+          "label": "Path to Google service account JSON key file (for service account auth)",
+          "required": false
+        },
+        "GWS_OAUTH_CLIENT_ID": {
+          "label": "Google OAuth2 client ID (for user-context auth)",
+          "required": false
+        },
+        "GWS_OAUTH_CLIENT_SECRET": {
+          "label": "Google OAuth2 client secret",
+          "required": false
+        },
+        "GWS_REFRESH_TOKEN": {
+          "label": "Google OAuth2 refresh token (for headless auth)",
+          "required": false
+        }
+      },
+      "skill_set": [
+        "hub://gws-master@1.0.0"
+      ]
     },
     "httpbin": {
       "latest": "1.0.0",
