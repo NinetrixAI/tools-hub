@@ -242,7 +242,9 @@ def hub_install_tool(name: str, skip_deps: bool = False) -> str:
     creds = raw.get("credentials", {})
     aliases = raw.get("credential_aliases", {})
 
-    # Check credentials
+    messages: list[str] = []
+
+    # Check credentials (warn, don't block)
     missing_creds = []
     for var in creds:
         present = bool(os.environ.get(var))
@@ -255,13 +257,15 @@ def hub_install_tool(name: str, skip_deps: bool = False) -> str:
             missing_creds.append(var)
 
     if missing_creds:
-        return (
-            f"Cannot install '{name}' — missing credentials:\n"
-            + "\n".join(f"  {v}: {creds[v].get('label', v) if isinstance(creds[v], dict) else v}" for v in missing_creds)
-            + "\n\nSet these environment variables and try again."
+        cred_lines = "\n".join(
+            f"  {v}: {creds[v].get('label', v) if isinstance(creds[v], dict) else v}"
+            for v in missing_creds
         )
-
-    messages: list[str] = []
+        messages.append(
+            f"Warning: missing credentials (some features may not work):\n"
+            f"{cred_lines}\n"
+            f"Set these environment variables when needed."
+        )
 
     # Install dependencies
     if not skip_deps and deps:

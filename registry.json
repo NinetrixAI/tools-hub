@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-27T16:02:56Z",
+  "generated_at": "2026-03-27T18:11:49Z",
   "tools": {
     "agent-browser": {
       "latest": "1.0.0",
@@ -419,7 +419,7 @@
         "1.0.0": {
           "sha256": "51cdaa10fefa8b1af78ad1fe5214d04d3e478789651d465b7eac8a554ad0177d",
           "file_hashes": {
-            "hub_runtime_tools.py": "b1b3dc498f7da8cdc536c604492f7dfb783a7fab2e4b2a9f45aac0d6a0b08c36"
+            "hub_runtime_tools.py": "b0b08611245f837bc89f59e1133e30bb32c0cffc58af0223f79811db74b1b360"
           }
         }
       },
